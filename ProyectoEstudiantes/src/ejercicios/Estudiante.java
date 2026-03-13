@@ -2,9 +2,9 @@ package ejercicios;
 
 public class Estudiante {
 	
-	private String nombre;
-    private int edad;
-    private double promedio;
+	protected String nombre;
+    protected int edad;
+    protected double promedio;
 
     public Estudiante(String nombre, int edad, double promedio) {
         this.nombre = nombre;

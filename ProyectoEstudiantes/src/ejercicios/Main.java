@@ -2,18 +2,23 @@ package ejercicios;
 
 public class Main {
 
-	public static void main(String[] args) {
-        Estudiante estudiante1 = new Estudiante("Victor", 20, 85);
-        Estudiante estudiante2 = new Estudiante("Ana", 19, 60);
+    public static void main(String[] args) {
 
-        estudiante1.mostrarInformacion();
-        System.out.println("¿Aprueba? " + estudiante1.aprueba());
+        EstudianteLicenciatura est1 =
+                new EstudianteLicenciatura("Victor", 20, 85, "Ingeniería en Sistemas");
 
-        System.out.println("------------------");
+        EstudiantePosgrado est2 =
+                new EstudiantePosgrado("Ana", 25, 90, "Inteligencia Artificial");
 
-        estudiante2.mostrarInformacion();
-        System.out.println("¿Aprueba? " + estudiante2.aprueba());
+        System.out.println("=== Estudiante Licenciatura ===");
+        est1.mostrarInformacion();
+        System.out.println("Aprueba: " + est1.aprueba());
 
-	}
+        System.out.println();
 
+        System.out.println("=== Estudiante Posgrado ===");
+        est2.mostrarInformacion();
+        est2.investigar();
+        System.out.println("Aprueba: " + est2.aprueba());
+    }
 }
