@@ -1,0 +1,3 @@
+interface Descontable {
+    double aplicarDescuento();
+}
